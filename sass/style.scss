@@ -1,15 +1,95 @@
 /* Variables */
-
 $font-title: 'Work Sans', sans-serif;
 $font-text: 'Roboto', sans-serif;
 
 $color-yellow: #e4c03c;
-$color-dark: #222222;
-$color-gray: #777777;
+$color-dark: #111111;
+$color-gray: #bebebe;
+$color-light: #f7f7f7;
+$color-white: #ffffff;
 
 /* Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* Header */
+header {
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+/* Navigation */
+
+nav {
+    padding-top: 40px;
+}
+
+.logo {
+    font-family: $font-title;
+    color: $color-yellow;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu li {
+    font-family: $font-title;
+    font-weight: 400;
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+    }
+}
+
+/* Intro */
+
+.intro {
+    text-align: center;
+    color: $color-white;
+    padding: 150px 0;
+
+    h2 {
+        font-family: $font-title;
+        font-style: italic;
+    }
+
+    h1 {
+        font-family: $font-title;
+        font-weight: 700;
+        margin: 50px 0 60px;
+    }
+
+    .btn-intro {
+        background-color: $color-yellow;
+        color: $color-white;
+        padding: 25px 50px;
+        margin: 0 auto;
+        text-decoration: none;
+        font-family: $font-title;
+        font-weight: 700;
+        width: 20%;
+        transition: all 0.3s;
+    }
+
+    .btn-intro:hover {
+        background-color: #ffc800;
+    }
 }
