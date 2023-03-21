@@ -8,3 +8,8 @@ $color-dark: #222222;
 $color-gray: #777777;
 
 /* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
