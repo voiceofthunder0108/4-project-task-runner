@@ -4,11 +4,10 @@ $font-text: 'Roboto', sans-serif;
 
 $color-yellow: #eac027;
 $color-dark: #222020;
-$color-footer: #555555;
 $color-darker-gray: #6a6969;
 $color-gray: #777777;
 $color-light: #f7f7f7;
-$color-light-opacity: #f7f7f7f1;
+$color-light-opacity: #fcf4f4f1;
 $color-white: #ffffff;
 
 $font-xs: 13px;
@@ -193,12 +192,12 @@ ul {
         }
 
         .menu li a {
-            color: $color-footer;
+            color: $color-darker-gray;
             font-size: $font-m;
         }
 
         .menu li a:hover {
-            border-bottom: 1px solid $color-footer;
+            border-bottom: 1px solid $color-darker-gray;
         }
 
         .menu {
@@ -217,7 +216,7 @@ ul {
     }
 
     .menu-wrapper input:checked + label div {
-        background-color: $color-footer;
+        background-color: $color-darker-gray;
     }
 
     .menu-wrapper input:checked ~ ul {
